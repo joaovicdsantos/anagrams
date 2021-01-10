@@ -28,3 +28,9 @@ budinha@budinha-pc:/anagrams/$ anagrams golang
 
 ## Example
 !["example"](https://media.giphy.com/media/mV8yyjfJ7viSrCPwg1/giphy.gif)
+
+## A comparison with obvious result
+
+Some years ago I made this same code, or at least the same functionality, with the Python language. When I finished this program in Go, I decided to make a certain speed comparison. It is important to note that python code does not implement threads or anything like that. In the future, I intend to write a new code and redo this comparison (which probably won't change the result, but it's cool :P). Results: 
+
+[![video](https://img.youtube.com/vi/DO3WUEi7AIM/0.jpg)](https://www.youtube.com/watch?v=DO3WUEi7AIM)
