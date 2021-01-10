@@ -23,16 +23,15 @@ func main() {
 	fmt.Printf("Repetitions\t%v\n", currentWord.Repetitions)
 	fmt.Printf("Anagrams\t%d\n\n", currentWord.Anagrams)
 
-	inicio := time.Now()
-
 	fmt.Print("Do you want to show all possible combinations?(y/any) ")
 	var res string
 	fmt.Scanln(&res)
 	if res == "y" {
+		inicio := time.Now()
 		currentWord.ShowCombinations()
+		fmt.Println(time.Since(inicio))
 	} else {
 		os.Exit(0)
 	}
 
-	fmt.Println(time.Since(inicio))
 }
