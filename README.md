@@ -1,4 +1,4 @@
-# Anagrams !["golang version"](https://img.shields.io/badge/golang-v1.15.6-green)
+# Anagrams !["golang version"](https://img.shields.io/badge/golang-v1.15.6-green) [![Go Report Card](https://goreportcard.com/badge/github.com/joaovicdsantos/anagrams)](https://goreportcard.com/report/github.com/joaovicdsantos/anagrams)
 
 A program that calculates anagrams made in Go using the resources of **concurrency**.
 
