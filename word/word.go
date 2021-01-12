@@ -14,6 +14,7 @@ func init() {
 	rand.Seed(time.Now().UnixNano())
 }
 
+// Word - a word class
 type Word struct {
 	Content     string
 	Sliced      []string
@@ -21,6 +22,7 @@ type Word struct {
 	Anagrams    int
 }
 
+// NewWord - create a new word
 func NewWord(content string) *Word {
 	slicedWord := split(content)
 	rep := repetitions(slicedWord)
@@ -72,6 +74,7 @@ func factorial(number int) int {
 	return number * factorial(number-1)
 }
 
+// ShowCombinations - Calculates and shows all anagrams
 func (word *Word) ShowCombinations() {
 	var wg sync.WaitGroup
 
@@ -107,7 +110,7 @@ func (word *Word) ShowCombinations() {
 		}
 	}
 
-	for letter, _ := range word.Repetitions {
+	for letter := range word.Repetitions {
 		content, err := findAndRemoveOneLetter(word.Content, letter)
 		if err != nil {
 			os.Exit(1)
